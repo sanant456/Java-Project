@@ -1,4 +1,4 @@
-  # TASK 2
+
 ## STUDENT GRADE CALCULATOR
 
 Input: Take marks obtained (out of 100) in each subject.
