@@ -1,23 +1,23 @@
 import java.util.Scanner;
-public class Main {
+public class Studentgrade {
     public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
         System.out.println("Welcome to Student Grade Calculator!");
 
         // Collect student details
         System.out.print("Enter Student Name: ");
-        String studentName = scanner.nextLine();
+        String studentName = sc.nextLine();
 
         System.out.print("Enter Roll Number: ");
-        int rollNumber = scanner.nextInt();
+        int rollNumber = sc.nextInt();
 
         // Collect marks for 5 subjects
         double[] marks = new double[5];
         double totalMarks = 0;
         for (int i = 0; i < 5; i++) {
             System.out.printf("Enter marks for Subject %d: ", i + 1);
-            marks[i] = scanner.nextDouble();
+            marks[i] = sc.nextDouble();
             totalMarks += marks[i];
         }
 
@@ -45,7 +45,7 @@ public class Main {
         System.out.println("Percentage: " + percentage + "%");
         System.out.println("Grade: " + grade);
 
-        scanner.close();
+        sc.close();
     }
 }
 
